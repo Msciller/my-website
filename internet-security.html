@@ -113,7 +113,62 @@
 			<br>
 			Another way to categorize malware is by what it does once it has successfully infected its victim's computers. There are a wide range of potential attack techniques used by malware:
 			</p>
+		<h2>Software and Hardware to protect networks</h2>
+		<h4>Network Security Components</h4>
+			<p>To deter cyberattacks and hacking attempts, a total of three types of network security components can be called upon – <strong>hardware</strong>, <strong>software</strong>, and <strong>cloud</strong> security components.
+			<br>
+			<br>
+			<strong>Hardware components</strong> include servers and devices that perform an array of security operations within a network. Hardware components can be set up in two ways:
+			</p>
+				<ul>
+					<li><strong>Out of the path of network traffic <em>(“out-of-line”)</em>:</strong> Operating as a separate entity from network traffic, out-of-line security appliances are tasked with monitoring traffic and raising alerts when they detect malicious data.</li>
+					<li><strong>In the path of network traffic <em>(“in-line”)</em>:</strong> – A more popular option of the two, in-line hardware appliances are tasked with directly blocking data packets the moment they run into potential threats.</li>
+				</ul>	
+			<p>Security software components are installed on devices across the network, providing added detection capabilities and threat remediation. The far most common form of software network security components are antivirus applications.
+			<br>
+			<br>
+			Finally, cloud services entail offloading the security infrastructure onto a cloud provider. The protection strategy is similar to in-line hardware appliances as all the network traffic goes through the cloud provider. While there, the traffic gets scanned for potential threats before either being blocked or allowed into the network.
+			<br>
+			<br>
+			Sound networks usually rely on a combination of several security components working at once. This kind of a multi-layered defense system ensures that even if a threat manages to slip through the cracks of one component, another layer of protection will keep it from gaining access to the network.
+			</p>
+		<h2>Network protocols</h2>
+		<h4>SSL: Secure Sockets Layer</h4>
+			<p>SSL is a standardized technology that allows data traffic to be encrypted between a web browser and a website (or between two web servers), thus protecting the connection. This prevents a hacker from seeing or intercepting information that is transmitted from one point to another, and which may include personal or financial data.</p>
+		<h4>HTTPS: Hyper Text Protocol Secure</h4>
+			<p>If the letters HTTPS appear at the beginning of a website address (URL), the website is protected by an SSL or TLS certificate. In addition, an icon of a padlock appears in the browser's address bar and, by clicking on this icon, users can consult the certificate data, such as the issuing authority and the name of the company that owns the website.</p>
+		<h4>What is IPv6?</h4>
+			<p>IPv6 is the latest version of the Internet Protocol, which identifies devices across the internet so they can be located. Every device that uses the internet is identified through its own IP address in order for internet communication to work. In that respect, it’s just like the street addresses and zip codes you need to know in order to mail a letter.
+			<br>
+			<br>
+			The previous version, IPv4, uses a 32-bit addressing scheme to support 4.3 billion devices, which was thought to be enough. However, the growth of the internet, personal computers, smartphones and now Internet of Things devices proves that the world needed more addresses.
+			<br>
+			<br>
+			Fortunately, the Internet Engineering Task Force (IETF) recognized this 20 years ago. In 1998 it created IPv6, which instead uses 128-bit addressing to support approximately 340 trillion trillion (or 2 to the 128th power, if you like). Instead of the IPv4 address method of four sets of one- to three-digit numbers, IPv6 uses eight groups of four hexadecimal digits, separated by colons.
+			</p>
+		<h2>Digital certificate and certificate autorities</h2>
+			<p>Digital certificates are issued by trusted parties, called certificate authorities, to verify the identity of an entity, such as a client or server.
+			<br>
+			The digital certificate serves two purposes: it verifies the owner's identity and it makes the owner's public key available. It is issued with an expiration date, after which it is no longer guaranteed by the certificate authority (CA).
+			<br>
+			<br>
+			To obtain a digital certificate, you send a request to the CA of your choice, such as Verisign, or RSA. The request includes your distinguished name, your public key, and your signature. A distinguished name (DN) is a unique identifier for each user or host for which you are applying for a certificate. The CA checks your signature using your public key and performs some level of verification of your identity (this varies with different CAs). After verification, the CA sends you a signed digital certificate that contains your distinguished name, your public key, the CA's distinguished name, and the signature of the certificate authority. You store this signed certificate in your key database.
+			<br>
+			<br>
+			When you send this certificate to a receiver, the receiver performs two steps to verify your identity:
+			</p>
+				<ul>
+					<li>1. Uses your public key that comes with the certificate to check your digital signature.</li>
+					<li>2.Verifies that the CA that issued your certificate is legitimate and trustworthy. To do this, the receiver needs the public key of the CA. The receiver might already hold an assured copy of the public key of the CA in their key database, but if not, the receiver must acquire an additional digital certificate to obtain the public key of the CA. This certificate might in turn depend on the digital certificate of another CA; there might be a hierarchy of certificates issued by multiple CAs, each depending on the validity of the next. Eventually, however, the receiver needs the public key of the root CA. The root CA is the CA at the top of the hierarchy. To trust the validity of the digital certificate of the root CA, the public-key user must receive that digital certificate in a secure manner, such as through a download from an authenticated server, or with preloaded software received from a reliable source, or on a securely delivered diskette.</li>
+				</ul>
+			<p>Many applications that send a digital certificate to a receiver send not just their own certificate, but also all of the CA digital certificates necessary to verify the hierarchy of certificates up to the root CA certificate.
+			<br>
+			<br>	
+			For a digital certificate to be entirely trustworthy, the owner of the digital certificate must have carefully protected their private key, for example, by encrypting it on their computer's hard drive. If their private key has been compromised, an imposter could misuse their digital certificate.
+			<br>
+			<br>
+			You can use self-signed digital certificates for testing purposes. A self-signed digital certificate contains your distinguished name, your public key, and your signature.
+			</p>	
 		<h4><a href="https://msciller.github.io/my-website/index.html">GO BACK TO INDEX</a></h4>	
 	</body>
 </html>
-<p></p>
